@@ -1,0 +1,66 @@
+
+img {
+    height: 200px; 
+    width: 100% !important;
+}
+
+
+.body {
+    background-color:#97ad19;
+}
+
+.add {
+    background-color: #7e3300;
+    color: rgb(177, 241, 231);
+    font-weight: bold;
+}
+
+/* .card-title, .card-text {
+    color: rgb(146, 99, 13);
+ } */
+
+ .infos {
+     color: darkmagenta;
+     font-weight: bold;
+ }
+
+ h1 {
+     color:yellow;
+ }
+
+ .modal-title {
+     color: #97ad19;
+     
+ }
+
+ .modal-header, .modal-footer {
+    background: rgb(146, 99, 13);
+ }
+
+ .modal-body {
+    background: #97ad19;
+  color:  #6e4b08;
+  font-weight: bold;
+ }
+
+ .modal-body h5 {
+     color: #4d3509;
+     font-weight: bold;
+     text-decoration: underline;    
+ }
+
+ .modal-body a {
+     text-decoration: none;
+     color: #6e4b08;
+     font-weight: bold;
+ }
+
+ .modal-body a:hover {
+     color: rgb(114, 22, 37);
+ }
+
+ .modal-footer p {
+     font-style: italic;
+     color: #97ad19;
+ }
+

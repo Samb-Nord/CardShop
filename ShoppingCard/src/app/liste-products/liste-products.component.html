@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+           <h1>{{ category }}</h1> 
+        </div>
+    </div>
+    <div class="row m-1">
+        <div class="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 resp" *ngFor="let p of products">
+            <div class="card">
+                <a routerLink="/product/{{p.id}}"><img class="card-img-top" src="{{p.image}}" alt="..."></a>
+            </div>
+            <a class="link" routerLink="/product/{{p.id}}">
+                <div class="card-body">
+                    <h4>{{p.titre}}</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

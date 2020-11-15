@@ -10,13 +10,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { DetailProduitComponent } from './detail-produit/detail-produit.component';
+import { ListeProductsComponent } from './liste-products/liste-products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AccueilComponent,
-    CatalogComponent
+    CatalogComponent,
+    DetailProduitComponent,
+    ListeProductsComponent
   ],
   imports: [
     BrowserModule,

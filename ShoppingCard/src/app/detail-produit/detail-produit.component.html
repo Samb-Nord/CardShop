@@ -1,0 +1,41 @@
+<div class="row m-3" *ngFor="let p of product">
+    <h1 class="col col-sm-10 col-md-7 col-lg-4 offset-1"> {{ p.titre }}</h1>
+  </div>
+  
+  <div class="row m-3">
+    <div class="card col col-sm-10 col-md-7 col-lg-4 offset-1 p-0NG " *ngFor="let p of product">
+      <img class="card-img-top" src="{{p.image}}">
+      <div class="card-body mb-3">
+        <h5 class="card-title">{{p.titre}}</h5>      
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Prix au kilo : {{p.prix}}€</li>
+      </ul>
+      <div class="card-body">
+        <button class="card-link btn add m-1" (click)="addInPanier(p.id)">Ajouter au panier</button>
+        <button data-toggle="modal" href="#infos" class="btn btn-warning infos m-1">en savoir plus</button>
+        <div class="modal" id="infos">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">{{p.titre}}</h4>
+                <button type="button" class="close" data-dismiss="modal">x</button>
+              </div>
+              <div class="modal-body">
+                <h5>Infos</h5>
+                {{ p.def }} <br>
+                <br>
+                <h5>Liens utiles</h5>
+                <ul *ngFor="let c of p.link; index as i">
+                  <li> <a href="{{ c }}" target="_blank">lien n°{{ i + 1 }}</a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <p>source : "{{ p.source }}"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
