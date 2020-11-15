@@ -1,0 +1,24 @@
+nav i {
+    transition: .5s ease;
+    font-size: 33px;
+    color: rgb(0, 255, 13) ;
+}
+
+nav i:hover {
+    transform: scale(2);
+}
+
+.survol a {
+    padding: 15px;
+    transition: .5s ease;
+    font-size: 21px;
+    color: aqua !important;
+    font-weight: bold ;
+}
+
+.survol  a:hover {
+    background-color: rgb(161, 47, 255);
+    color: rgb(0, 255, 13) !important;
+    border-radius: 33px;
+  
+}
