@@ -1,0 +1,28 @@
+<div class="row m-3">
+    <div class="col">
+        <h1>Rechercher un produit</h1>
+    </div>
+</div>
+<div class="row m-3">
+    <div class="col-5 col-sm-5 col-md-4 col-lg-4 m-3">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nom du produit" [(ngModel)]="searchTerm"
+                    name="searchTerm">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 resp" *ngFor="let p of produits | filter : searchTerm">
+        <div class="card">
+            <a routerLink="/product/{{p.id}}"><img class="card-img-top" src="{{p. image}}" alt="..."></a>
+        </div>
+        <a class="link" routerLink="/product/{{p.id}}">
+            <div class="card-body">
+                <h4>{{p.titre}}</h4>
+            </div>
+        </a>
+    </div>
+</div>

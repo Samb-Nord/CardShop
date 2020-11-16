@@ -12,6 +12,9 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { DetailProduitComponent } from './detail-produit/detail-produit.component';
 import { ListeProductsComponent } from './liste-products/liste-products.component';
+import { SearchComponent } from './search/search.component';
+import { PanierComponent } from './panier/panier.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ListeProductsComponent } from './liste-products/liste-products.componen
     AccueilComponent,
     CatalogComponent,
     DetailProduitComponent,
-    ListeProductsComponent
+    ListeProductsComponent,
+    SearchComponent,
+    PanierComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
