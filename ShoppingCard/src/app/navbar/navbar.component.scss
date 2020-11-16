@@ -19,6 +19,12 @@ nav i:hover {
 .survol  a:hover {
     background-color: rgb(161, 47, 255);
     color: rgb(0, 255, 13) !important;
+    border-radius: 33px;  
+}
+
+.survol .active {
+    list-style: none;
+    background-color: rgb(161, 47, 255);
+    color: rgb(0, 255, 13) !important;
     border-radius: 33px;
-  
 }
