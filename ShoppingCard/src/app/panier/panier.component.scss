@@ -1,0 +1,39 @@
+img {
+    height: 55px;
+    width: 55px;
+}
+
+.border {
+    border: solid rgb(197, 42, 42) 1px;
+    background-color: rgb(255, 213, 158);
+    color: crimson;
+    font-weight: bold;
+}
+
+.resp {
+    margin: 3px left;
+}
+
+span {
+    color: rgb(165, 163, 42);
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+thead {
+    background-color: rgb(165, 163, 42);
+}
+
+tbody {
+    background-color: rgb(51, 33, 45);
+}
+
+table {
+    opacity: 0.7;
+}
+
+td {
+    color: rgb(165, 163, 42);
+    font-size: 21px;
+}

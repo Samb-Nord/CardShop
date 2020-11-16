@@ -1,1 +1,37 @@
-
+<div class="row m-3">
+    <div class="col">
+        <h1>Votre panier</h1>
+    </div>
+</div>
+<div class="row m-3">
+    <!-- panier sous forme de tableau -->
+    <table class="table table-striped col col-sm-10 col-lg-9 col-xl-7 resp">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Titre</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Total produit</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let p of productsCard">
+            <tr>
+                <th scope="row" class="tp"><img src="{{p.img}}"></th>
+                <td class="t5">{{p.nom}}</td>
+                <td class="t4">{{p.prix}}€</td>
+                <td class="t3"><button class="boutonQty" (click)="updatePlus(p.id)"><i class="fa fa-plus-circle"
+                            aria-hidden="true"></i></button><span>{{p.qty}} </span><button class="boutonQty"
+                        (click)="updateMoins(p.id)"><i class="fa fa-minus-circle" aria-hidden="true"></i></button></td>
+                <td class="t2">{{(p.prix*p.qty).toFixed(2)}}€</td>
+                <td class="b1"><button class="btn btn-danger" (click)="delete(p.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row ml-3">
+    <div class="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-2 offset-5 border">
+        Total : {{total}}€
+    </div>
+</div>
