@@ -2,6 +2,7 @@
 img {
     height: 200px; 
     width: 100% !important;
+    padding: 5px;
 }
 
 
@@ -62,5 +63,10 @@ img {
  .modal-footer p {
      font-style: italic;
      color: #97ad19;
+ }
+
+ #alert {
+     background: green;
+     opacity: 0;
  }
 

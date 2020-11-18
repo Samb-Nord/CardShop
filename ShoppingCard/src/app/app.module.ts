@@ -16,6 +16,7 @@ import { SearchComponent } from './search/search.component';
 import { PanierComponent } from './panier/panier.component';
 import { FilterPipe } from './filter.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { FilterPipe } from './filter.pipe';
     CarouselModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule    
+    ReactiveFormsModule
+     
   ],
   providers: [],
   bootstrap: [AppComponent]

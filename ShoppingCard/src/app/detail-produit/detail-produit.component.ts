@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-detail-produit',
@@ -24,6 +25,7 @@ export class DetailProduitComponent implements OnInit {
   }
   //ajout dans panier
   addInPanier = (id) => {
+    let message = document.getElementById('alert');
     //rechercher produit par son id
     let produit = this.data.produits.find(elt => elt.id == id);
     //je cherche le produit s'il existe dans le panier
@@ -36,7 +38,16 @@ export class DetailProduitComponent implements OnInit {
     else {
       this.data.productPanier.push({ id: produit.id, nom: produit.titre, qty: 1, prix: produit.prix, img: produit.image })
     }
-    alert("produit ajouté");
+    //message de validation d'ajout
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Produit ajouté dans le panier',
+      showConfirmButton: false,
+      timer: 1500
+    })
+
+
   }
 
 }
