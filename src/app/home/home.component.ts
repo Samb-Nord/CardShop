@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
     animateIn: 'linear',
     animateOut: 'linear',
     dots: true,
+    navSpeed: 100,
     stagePadding: 10,
     lazyLoad: true,
     margin: 20,
@@ -42,14 +43,12 @@ export class HomeComponent implements OnInit {
       0: {
         items: 1,
         margin: 20,
-        nav: true,
-        navSpeed: 100
+        nav: true
       },
       400: {
         items: 1, 
         margin: 20,
-        nav: true,
-        navSpeed: 100
+        nav: true
       },
       740: {
         items: 2,

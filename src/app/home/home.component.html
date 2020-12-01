@@ -1,9 +1,16 @@
-<owl-carousel-o [options]="customOptions">
-
-<ng-container *ngFor="let slide of Images">
-    <ng-template carouselSlide>
-        <img src="{{ slide }}" alt="...">
-    </ng-template>
-</ng-container>
-
-</owl-carousel-o>
+<div class="row">
+    <div class="col">
+        
+    </div>
+</div>
+<div class="row m-3" style="background: gray;" >
+    <div class="col m-3">
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of Images">
+                <ng-template carouselSlide>
+                    <img src="{{ slide }}" alt="...">
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</div>
