@@ -1,6 +1,7 @@
 .container {
     margin: 0 !important;
     padding: 10px !important;
+    width: 100%;
   }
   
   img {
@@ -24,8 +25,12 @@
   }
   
   .resp {
-    margin : 5px auto;
+    margin : 5px;
     width: 100%;
+  }
+
+  .recherche {
+    flex-wrap: wrap;
   }
   
   
